@@ -9,3 +9,42 @@
     font-size: 25px;
     border: 1px solid red
 }
+
+.main-container{
+    margin: 10px auto auto; /* Top, rl and bottom */
+    border: 1px solid red;
+    width: 600px;
+    height: 300px;
+}
+
+.sub-container{
+    border: 1px solid green;
+    width: 50%;
+    height: 50%;
+}
+
+.sub-container-vw{
+    border: 1px solid green;
+    width: calc(50vw - 2px);
+    height: calc(50vh - 2px);
+}
+
+.box-sizing-content{
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    background-color: grey;
+}
+
+.box-sizing-border{
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    background-color: grey;
+    box-sizing: border-box;
+    
+}
+
+.colored-w{
+    background-color: white;
+}

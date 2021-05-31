@@ -19,5 +19,43 @@
         EM = relative to element font-size(or parent)
         </p>
     </div>
+    <div class="main-container">
+        This is a 600x300 px container
+        <div class="sub-container">
+            This is 50% Size
+            <br>
+            % is relative to parent element/container
+        </div>
+    </div>
+    <div class="main-container">
+        This is a 600x300 px container
+        <div class="sub-container-vw">
+            This is 50vw and 50vh size
+            <br>
+            vw and vh are % relative to viewport, so this will change according to viewport
+        </div>
+    </div>
+    <div>
+        Box sizing
+        <div class="box-sizing-content">
+                Box sizing: default: 
+                COntent
+                <br>
+                WxH: 500x200 px
+                <br>
+                Padding: 50px
+                <br>
+                Padding is added to W and H.
+        </div>
+        <div class="box-sizing-border">
+            Box sizing: Border
+            <br>
+            WxH: 500x200 px
+            <br>
+            Padding: 50px
+            <br>
+            Padding is included in W and H
+        </div>
+    </div>
 </body>
 </html>
