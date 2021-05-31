@@ -1,0 +1,53 @@
+/* body{
+    height: 1000px;
+} */
+.wrapper{
+    border: 1px solid green;
+    width: 50vw;
+    height: 50vh;
+    margin: 25vh auto auto;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;  */
+    position: relative;
+}
+
+.circle{
+    border: 1px solid blue;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.c-top{
+    position: absolute;
+    top: 45px;
+    left: calc(50% - 25px)
+}
+
+.c-bottom{
+    position: absolute;
+    bottom: 45px;
+    left: calc(50% - 25px)
+}
+
+.c-left{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 45px
+}
+
+.c-right{
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 45px
+}
+
+.square{
+    border: 1px solid red;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
