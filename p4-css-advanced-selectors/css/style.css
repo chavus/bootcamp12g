@@ -1,0 +1,95 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    text-align: center;
+    background-color: cadetblue;
+    width: 25vw;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+@keyframes rotate-animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.spiral{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    /* border: 5px solid red; */
+    animation: rotate-animation 2s linear infinite paused;
+}
+
+form input#animate-checkbox:checked ~ img {
+    animation-play-state: running;
+}
+
+form input#animate-checkbox ~ label::before{
+    content: "Activar ";
+}
+
+form input#animate-checkbox:checked ~ label::before{
+    content: "Desactivar ";
+}
+
+.clock{
+    margin-top: 10px;
+    margin-left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.hour{
+    width: 60px;
+    border:1px solid black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform-origin: left;
+    transition: 1s ease;
+}
+
+.minute{
+    width: 90px;
+    border:1px solid red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform-origin: left;
+    transition: 1s ease;
+}
+
+input#noon:checked ~ .clock *{
+    transform: rotate(-90deg);
+}
+
+input#four30:checked ~ .clock .hour{
+    transform: rotate(30deg);
+}
+
+input#four30:checked ~ .clock .minute{
+    transform: rotate(90deg);
+}
+
+input#six45:checked ~ .clock .hour{
+    transform: rotate(90deg);
+}
+
+input#six45:checked ~ .clock .minute{
+    transform: rotate(180deg);
+}
+
+input#nine:checked ~ .clock .hour{
+    transform: rotate(180deg);
+}
+
+input#nine:checked ~ .clock .minute{
+    transform: rotate(270deg);
+}
