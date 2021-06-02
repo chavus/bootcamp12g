@@ -1,0 +1,45 @@
+form{
+    text-align: center;
+    background-color: lightgray;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 5px;
+}
+.wrapper{
+    width: 80%;
+    height: 30vh;
+    border:1px solid red;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+*[class^=item-]{
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue
+}
+
+form input#flex-start:checked ~ .wrapper {
+    justify-content: flex-start;
+}
+
+form input#flex-end:checked ~ .wrapper {
+    justify-content: flex-end;
+}
+
+form input#center:checked ~ .wrapper {
+    justify-content: center;
+}
+
+form input#space-between:checked ~ .wrapper {
+    justify-content: space-between;
+}
+
+form input#space-around:checked ~ .wrapper {
+    justify-content: space-around;
+}
+
+form input#space-evenly:checked ~ .wrapper {
+    justify-content: space-evenly;
+}
