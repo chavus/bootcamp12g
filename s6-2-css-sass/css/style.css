@@ -11,6 +11,7 @@
 .c-orange button:hover {
   background-color: #e38826;
   color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c-dark-cyan {
@@ -24,6 +25,7 @@
 .c-dark-cyan button:hover {
   background-color: #006970;
   color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c-v-dark-cyan {
@@ -37,18 +39,20 @@
 .c-v-dark-cyan button:hover {
   background-color: #004241;
   color: #f2f2f2;
+  cursor: pointer;
 }
 
 * {
   font-family: 'Lexend Deca', sans-serif;
-  color: white;
   margin: 0;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 main {
-  width: 100vw;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -78,13 +82,16 @@ main section:last-of-type {
 
 main section h2 {
   font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
+  color: #f2f2f2;
 }
 
 main section p {
   font-size: 15px;
   line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 main section button {
