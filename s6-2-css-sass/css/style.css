@@ -4,12 +4,39 @@
   background-color: #e38826;
 }
 
+.c-orange button {
+  color: #e38826;
+}
+
+.c-orange button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
 .c-dark-cyan {
   background-color: #006970;
 }
 
+.c-dark-cyan button {
+  color: #006970;
+}
+
+.c-dark-cyan button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
 .c-v-dark-cyan {
   background-color: #004241;
+}
+
+.c-v-dark-cyan button {
+  color: #004241;
+}
+
+.c-v-dark-cyan button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
 }
 
 * {
@@ -20,7 +47,10 @@
 
 main {
   width: 100vw;
-  height: 100vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +65,15 @@ main {
 
 main section {
   width: 200px;
-  padding: 3rem;
+  padding: 2.5rem;
+}
+
+main section:first-of-type {
+  border-radius: .5rem .5rem 0 0;
+}
+
+main section:last-of-type {
+  border-radius: 0 0 .5rem .5rem;
 }
 
 main section h2 {
@@ -52,13 +90,15 @@ main section p {
 main section button {
   margin-top: 3rem;
   background-color: #f2f2f2;
-  padding: .7rem 2rem;
-  border: none;
+  padding: .6rem 1.5rem;
+  border: 2px solid #f2f2f2;
   border-radius: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
   main {
+    height: 100vh;
+    margin: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -69,6 +109,12 @@ main section button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  main section:first-of-type {
+    border-radius: .5rem 0 0 .5rem;
+  }
+  main section:last-of-type {
+    border-radius: 0 .5rem .5rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
