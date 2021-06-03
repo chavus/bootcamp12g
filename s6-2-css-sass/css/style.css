@@ -1,43 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
-main {
-  width: 350px;
-  font-family: 'Lexend Deca', sans-serif;
-  color: white;
-  margin: auto;
-}
-
-main section {
-  padding: 3rem;
-}
-
-main h2 {
-  font-family: 'Big Shoulders Display', cursive;
-}
-
-main #section-1 {
+.c-orange {
   background-color: #e38826;
 }
 
-main #section-2 {
+.c-dark-cyan {
   background-color: #006970;
 }
 
-main #section-3 {
+.c-v-dark-cyan {
   background-color: #004241;
+}
+
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section {
+  width: 200px;
+  padding: 3rem;
+}
+
+main section h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+main section p {
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+main section button {
+  margin-top: 3rem;
+  background-color: #f2f2f2;
+  padding: .7rem 2rem;
+  border: none;
+  border-radius: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  section {
-    width: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

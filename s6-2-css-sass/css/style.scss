@@ -2,37 +2,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-main{
-    width: 350px;
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$colors:("orange":$bright-orange, "dark-cyan":$dark-cyan, "v-dark-cyan":$very-dark-cyan);
+ 
+@each $name, $color in $colors{
+    .c-#{$name}{
+        background-color: $color;
+    }
+}
+
+*{
     font-family: 'Lexend Deca', sans-serif;
     color: white;
-    section{
-        padding: 3rem;
-    }
-    h2{
-        font-family: 'Big Shoulders Display', cursive;
-    }
-    #section-1{
-        background-color: hsl(31, 77%, 52%);
-    }
-    #section-2{
-        background-color: hsl(184, 100%, 22%);
-    }
-    #section-3{
-        background-color: hsl(179, 100%, 13%);
-    }
-    img{
+    margin: 0;
+}
 
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        width: 200px;
+        padding: 3rem;
+        h2{
+            font-family: 'Big Shoulders Display', cursive;
+            margin-top: 1.6rem;
+            margin-bottom: 1.6rem;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.5rem;
+        }
+        button{
+            margin-top: 3rem;
+            background-color:hsl(0, 0%, 95%) ;
+            padding: .7rem 2rem;
+            border:none;
+            border-radius: 3rem;
+        }
+    
     }
-    margin: auto;
 }
 
 @media only screen and (min-width:768px){
     main{
-        display: flex;
-        justify-content: center ;
-    }
-    section{
-        width: 350px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
