@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.element{
+  width: 100px;
+  height: 100px;
+  border: 4px solid red;
+}
+
+#el-2{
+  border-color: tomato;
+}
+
+#el-3{
+  border-color: gray;
+}
+
+@media only screen and (min-width:576px) {
+  .wrapper{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  
+}
+
+@media only screen and (min-width:768px) {
+  .element{
+    height: unset;
+  }
+
+  .wrapper{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  
+}

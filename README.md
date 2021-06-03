@@ -1,7 +1,6 @@
 # bootcamp12g
-
 ## Chava Jimenez
-## Edad 32
+## Vercel: https://bootcamp12g-dun.vercel.app/
 
-12 Gen Kodemia
+
 
