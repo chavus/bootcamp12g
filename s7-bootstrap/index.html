@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
 </head>
 <body>
@@ -22,6 +23,74 @@
     <div class="container-md bg-primary">100% wide until medium breakpoint</div>
     <div class="container-lg bg-primary">100% wide until large breakpoint</div>
     <div class="container-xl bg-primary">100% wide until extra large breakpoint</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">This will stacked in mobile and horizontal in mobile</div>
+            <div class="col-12 col-lg-6">This will stacked in mobile and horizontal in mobile</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-primary">class=col</div>
+            <div class="col bg-secondary">class=col</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row h-100p">
+            <div class="col-3 bg-primary"><h4 class="bg-warning">class=col-3 with a h4</h4></div>
+            <div class="col-9 bg-secondary">class=col-9</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-3 bg-primary"><h4 class="bg-warning">class=col</h4></div>
+            <div class="col-auto bg-secondary">class=col-auto this adjust to the size of the content doesnt matter the size</div>
+            <div class="col-3 bg-warning p-4">class=col Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, autem dolores? Autem, enim animi officia quae, labore nobis nostrum atque veritatis expedita tempore cum laudantium incidunt ex voluptates aspernatur excepturi. </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-2">col-2 with justify-content-centerjustify-content-center</div>
+            <div class="col-2">col-2 col-2 with justify-content-centerjustify-content-center</div>
+            <div class="col-2">col-2 col-2 with justify-content-centerjustify-content-center</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center no-gutters">
+            <div class="col-2 "><p class="bg-warning">no-gutter removes the padding of the column</p></div>
+            <div class="col-2"><p class="bg-warning">no-gutter removes the padding of the column</p></div>
+            <div class="col-2"><p class="bg-warning">no-gutter removes the padding of the column</p></div>
+        </div>
+    </div>
+    <div class="container">
+        justify-content-between
+        <div class="row justify-content-between h-100p align-items-center">
+            <div class="col-3 h-25"><p class="bg-warning">Align items center</p></div>
+            <div class="col-3 h-25"><p class="bg-warning">Align items center</p></div>
+            <div class="col-3 h-25"><p class="bg-warning">Align items center</p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        justify-content-between
+        <div class="row justify-content-between h-100p">
+            <div class="col-3 h-25"><p class="bg-warning">Self Align start </p></div>
+            <div class="col-3 h-25 align-self-center"><p class="bg-warning">Self Align center</p></div>
+            <div class="col-3 h-25 align-self-end"><p class="bg-warning">Self Align end </p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row  h-100p">
+            <div class="col-3 h-25 "><p class="bg-warning">Item 1 </p></div>
+            <div class="col-3 h-25 "><p class="bg-warning">Item2</p></div>
+            <div class="col-3 h-25 offset-md-2"><p class="bg-warning">Item 3 offset-md.2 (2 cols) </p></div>
+        </div>
+    </div>
 
     <!-- Bootstrap scripts, copy them at the bottom -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
