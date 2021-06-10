@@ -1,0 +1,50 @@
+.text-color-very-dark-magenta {
+  color: #502050;
+}
+
+.text-color-soft-pink {
+  color: #ee68a4;
+}
+
+.text-color-dark-grayish-magenta {
+  color: #937b92;
+}
+
+.text-color-light-grayish-magenta {
+  color: #f7f2f7;
+}
+
+.text-color-white {
+  color: white;
+}
+
+.bg-color-very-dark-magenta {
+  background-color: #502050;
+}
+
+.bg-color-soft-pink {
+  background-color: #ee68a4;
+}
+
+.bg-color-dark-grayish-magenta {
+  background-color: #937b92;
+}
+
+.bg-color-light-grayish-magenta {
+  background-color: #f7f2f7;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
