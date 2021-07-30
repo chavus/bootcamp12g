@@ -1,0 +1,18 @@
+.out-box{
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+    // position: relative;
+}
+
+.inner-box{
+    box-sizing: border-box;
+    // position: absolute;
+    
+    background-color: gray;
+    margin: 0;
+    width: 10rem;
+    height: 4rem;
+    transform: translate3D(2rem, 2rem);
+
+}

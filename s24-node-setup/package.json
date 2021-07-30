@@ -1,0 +1,23 @@
+{
+  "name": "s24-node-setup",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo 'Hello from script'",
+    "iniciar": "echo 'Iniciar en español'"
+  },
+  "keywords": [
+    "first",
+    "node",
+    "kodemia",
+    "introduction-node"
+  ],
+  "author": "chavus",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1"
+  }
+}

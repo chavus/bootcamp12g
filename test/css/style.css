@@ -1,14 +1,17 @@
-*{
-    margin: 0;;
+.out-box {
+  height: 250px;
+  width: 100%;
+  border: 1px solid red;
 }
 
-.wrapper{
-    border: 1px solid red;
-    width: 600px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+.inner-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: gray;
+  margin: 0;
+  width: 10rem;
+  height: 4rem;
+  -webkit-transform: translate3D(2rem, 2rem);
+          transform: translate3D(2rem, 2rem);
 }
-.item{
-    border: 1px solid black;
-}
+/*# sourceMappingURL=style.css.map */
